@@ -46,7 +46,7 @@ endif
 	@echo done
 
 ../deps/js/src/libjs_static.a:
-	@cd ../deps/js/src/&&./configure&&make -j8&&cd ../../../modules
+	@cd ../deps/js/src/&&./configure --disable-tests&&make -j8&&cd ../../../modules
 
 .PHONY: clean
 

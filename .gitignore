@@ -47,3 +47,6 @@ deps/udns*/rblcheck
 deps/udns*/config.log
 deps/udns*/libudns.a
 
+.cproject
+.project
+.settings

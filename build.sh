@@ -33,5 +33,11 @@ else
 	fi
 	#echo "STAGING_DEBUG=1" > build.mk
 	echo "STAGING_RELEASE=1" > build.mk
+	
+	# Compile libudns separately as it doesn't always work from the Makefile
+	cd ./deps/udns-0.0.9
+	make clean && ./configure && make && ranlib libudns.a && make
+	cd ../..
+	
 	make
 fi
