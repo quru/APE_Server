@@ -1,6 +1,7 @@
 bin/aped
 bin/ape.log
 build.mk
+Debug/
 
 src/configure.h
 
